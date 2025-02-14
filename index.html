@@ -2,60 +2,69 @@
 <html lang="en">
   <head>
     <style>
-      #container {
-        margin: auto;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        margin: 10% auto;
         font-family: sans-serif;
         box-sizing: border-box;
-        height: 430px;
-        width: 500px;
+        height: 10%;
+        width: 60%;
         border: 1px solid gainsboro;
-        padding: 50px;
+        padding: 40px;
+        font-weight: 100;
       }
-     
+      section > * {
+        margin-bottom: 26px;
+      }
       h1 {
         font-weight: 300;
-        font-size: 38px;
-        margin: 0;
+        font-size: 50px;
         color: rgba(0, 0, 0, 0.6);
       }
-
-      #button {
+      a {
+        text-decoration: none;
+        font-size: 24px;
         border: 2px solid #4184e1;
-        border-radius: 20px;
+        border-radius: 30px;
         background-color: #4184e1;
         text-align: center;
-        padding: 10px 50px;
+        display: block;
+        padding: 10px;
         color: white;
+        text-transform: uppercase;
       }
       #line {
-        border: 2px solid black;
+        border: 1.2px solid black;
         height: 0px;
         width: 54px;
       }
       #desc {
-        line-height: 28px;
-        font-size: 20px;
-        font-weight: 100;
+        font-size: 24px;
+        line-height: 30px;
+        word-spacing: 2px;
         color: rgba(0, 0, 0, 0.4);
       }
-
       #tnc {
-        font-size: 14px;
-        line-height: 18px;
-        color: rgba(0, 0, 0, 0.2);
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.3);
       }
     </style>
     <title>CHAT BOT</title>
   </head>
   <body>
-    <section id="container">
+    <section>
       <h1>Build your first chatbot in 10 minutes!</h1>
-      <p id="line"></p>
+      <div id="line"></div>
       <p id="desc">
         Have a bot answering questions from customer on your website within 10
         minutes of signing up for ChatBot.
       </p>
-      <div id="button">TRY NOW &rightarrow;</div>
+      <a href="#">try now &rightarrow;</a>
       <p id="tnc">
         By clicking try now you create an account and agree to our Terms and
         Conditions and Privacy Policy.
